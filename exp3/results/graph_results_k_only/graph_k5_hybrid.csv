@@ -1,0 +1,463 @@
+question,reference_answer,reference_context,conversation_history,metadata,agent_answer,correctness,correctness_reason,RAGAS Context Recall,RAGAS Faithfulness,RAGAS Answer Relevancy,RAGAS Context Precision
+"As an employer, I need to understand the definition of 'Candidate for Employment' as stated in the legal documents. Can you provide me with the specific criteria that determine whether someone is considered a candidate for employment?",A 'Candidate for Employment' refers to a person who has applied for a specific employment position by submitting the necessary information or items in the format required by the employer or employment agency.,"Document 4: 1 
+ 
+New York City Department of Consumer and Worker Protection 
+ 
+Notice of Adoption of Final Rule 
+ 
+Pursuant to the authority vested in the Commissioner of the Department of Consumer and Worker Protection by 
+Sections 1043 and 2203(f) of the New York City Charter and Section 20-104(b) of the New York City 
+Administrative Code, and in accordance with the requirements of Section 1043 of the New York City Charter, 
+the Department amends Title 6 of the Rules of the City of New York.  
+ 
+An initial version of this rule was proposed and published on September 23, 2022. A public hearing was held on 
+November 4, 2022, and comments regarding the rule were received. DCWP proposed a second version of this 
+rule on December 23, 2022. A public hearing was held on January 23, 2023, and comments regarding the rule 
+were received.  
+ 
+Statement of Basis and Purpose 
+ 
+The Department of Consumer and Worker Protection (“DCWP” or “Department”) is adding rules to implement 
+new legislation regarding automated employment decision tools (“AEDT”). Local Law 144 of 2021 prohibits 
+employers and employment agencies from using an automated employment decision tool unless the tool has 
+been subject to a bias audit within one year of the use of the tool, information about the bias audit is publicly 
+available, and certain notices have been provided to employees or job candidates.   
+ 
+These rules establish that a bias audit of an AEDT must calculate the selection rate for each race/ethnicity and 
+sex category that is required to be reported on to the U.S. Equal Employment Opportunity Commission (“EEOC”) 
+pursuant to the EEO Component 1 report, and compare the selection rates to the most selected category to 
+determine an impact ratio. These calculations are consistent with Section 1607.4 of the EEOC Uniform 
+Guidelines on Employee Selection Procedures. See 29 C.F.R. § 1607.4. These rules generally clarify obligations 
+of employers and employment agencies under the new law.
+
+Document 7: 3 
+ 
+Section 1.  Chapter 5 of Title 6 of the Rules of the City of New York is amended to add Subchapter T to read 
+as follows: 
+Subchapter T: Automated Employment Decision Tools 
+§ 5-300. Definitions. 
+As used in this subchapter, the following terms have the following meanings: 
+ 
+Automated Employment Decision Tool. “Automated employment decision tool” or “AEDT” means 
+“Automated employment decision tool” as defined by § 20-870 of the Code where the phrase “to 
+substantially assist or replace discretionary decision making” means: 
+i. 
+to rely solely on a simplified output (score, tag, classification, ranking, etc.), with no other 
+factors considered; or 
+ii. 
+ to use a simplified output as one of a set of criteria where the simplified output is weighted 
+more than any other criterion in the set; or   
+iii. 
+to use a simplified output to overrule conclusions derived from other factors including 
+human decision-making.  
+  
+Bias Audit. “Bias audit” means “Bias audit” as defined by § 20-870 of the Code.  
+ 
+Candidate for Employment. “Candidate for employment” means a person who has applied for a specific 
+employment position by submitting the necessary information or items in the format required by the 
+employer or employment agency.  
+ 
+Category. “Category” means any component 1 category required to be reported by employers pursuant 
+to subsection (c) of section 2000e-8 of title 42 of the United States Code as specified in part 1602.7 of 
+title 29 of the Code of Federal Regulations, as designated on the Equal Employment Opportunity 
+Commission Employer Information Report EEO-1. 
+ 
+Code. “Code” means the Administrative Code of the City of New York. 
+ 
+Distribution Date. “Distribution date” means the date the employer or employment agency began using 
+a specific AEDT.  
+ 
+Employment Decision. “Employment decision” means “Employment decision” as defined by § 20-870 
+of the Code. 
+ 
+Employment Agency. “Employment agency” means “Employment agency” as defined by 6 RCNY § 5-
+249.  
+ 
+Historical data.",[],"{'question_type': 'complex_situational', 'seed_document_id': 4, 'topic': 'Definitions'}","According to the legal documents, a candidate for employment is defined as ""a person who has applied for a specific employment position."" Therefore, the specific criteria that determine whether someone is considered a candidate for employment would be whether they have applied for a specific employment position.",False,"The agent's answer lacks the detail about submitting necessary information or items in the required format, which is part of the ground truth definition.",1.0,1.0,0.8754501938819885,0.9999999999
+I'm an employer in New York City and want to understand the requirements for using an automated employment decision tool. Can you explain the definition of an automated employment decision tool and the conditions that need to be met before using it?,"An automated employment decision tool is defined as any computational process, derived from machine learning, statistical modeling, data analytics, or artificial intelligence, that issues simplified output, including a score, classification, or recommendation, that is used to substantially assist or replace discretionary decision making for making employment decisions that impact natural persons. Before using an automated employment decision tool in New York City, the following conditions must be met: 1. The tool must have undergone a bias audit within one year prior to its use. 2. A summary of the results of the most recent bias audit and the distribution date of the tool must be publicly available on the employer or employment agency's website. 3. Employers or employmnet agencies must notify candidates or employees residing in the city at least 10 business days before using the tool.","Document 0: Subchapter 25: Automated Employment Decision Tools
+§ 20-870 Definitions.
+For the purposes of this subchapter, the following terms have the following meanings:
+   Automated employment decision tool. The term ""automated employment decision tool"" means any computational process, derived from machine
+learning, statistical modeling, data analytics, or artificial intelligence, that issues simplified output, including a score, classification, or recommendation,
+that is used to substantially assist or replace discretionary decision making for making employment decisions that impact natural persons. The term
+""automated employment decision tool"" does not include a tool that does not automate, support, substantially assist or replace discretionary decision-
+making processes and that does not materially impact natural persons, including, but not limited to, a junk email filter, firewall, antivirus software,
+calculator, spreadsheet, database, data set, or other compilation of data.
+   Bias audit. The term ""bias audit"" means an impartial evaluation by an independent auditor. Such bias audit shall include but not be limited to the
+testing of an automated employment decision tool to assess the tool's disparate impact on persons of any component 1 category required to be reported
+by employers pursuant to subsection (c) of section 2000e-8 of title 42 of the United States code as specified in part 1602.7 of title 29 of the code of
+federal regulations.
+   Employment decision. The term ""employment decision"" means to screen candidates for employment or employees for promotion within the city.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+§ 20-871 Requirements for automated employment decision tools.
+   a.   In the city, it shall be unlawful for an employer or an employment agency to use an automated employment decision tool to screen a candidate or
+employee for an employment decision unless:
+      1.   Such tool has been the subject of a bias audit conducted no more than one year prior to the use of such tool; and
+      2.   A summary of the results of the most recent bias audit of such tool as well as the distribution date of the tool to which such audit applies has been
+made publicly available on the website of the employer or employment agency prior to the use of such tool.
+   b.   Notices required.
+
+Document 24: File #: Int 1894-2020, Version: A
+audit shall include but not be limited to the testing of an automated employment decision tool to assess the
+tool’s disparate impact on persons of any component 1 category required to be reported by employers pursuant
+to subsection (c) of section 2000e-8 of title 42 of the United States code as specified in part 1602.7 of title 29 of
+the code of federal regulations.
+Employment decision. The term “employment decision” means to screen candidates for employment or
+employees for promotion within the city.
+§ 20-871 Requirements for automated employment decision tools. a. In the city, it shall be unlawful for
+an employer or an employment agency to use an automated employment decision tool to screen a candidate or
+employee for an employment decision unless:
+1. Such tool has been the subject of a bias audit conducted no more than one year prior to the use of
+such tool; and
+2. A summary of the results of the most recent bias audit of such tool as well as the distribution date of
+the tool to which such audit applies has been made publicly available on the website of the employer or
+employment agency prior to the use of such tool.
+b. Notices required. In the city, any employer or employment agency that uses an automated
+employment decision tool to screen an employee or a candidate who has applied for a position for an
+employment decision shall notify each such employee or candidate who resides in the city of the following:
+1. That an automated employment decision tool will be used in connection with the assessment or
+evaluation of such employee or candidate that resides in the city. Such notice shall be made no less than ten
+business days before such use and allow a candidate to request an alternative selection process or
+accommodation;
+2. The job qualifications and characteristics that such automated employment decision tool will use in
+the assessment of such candidate or employee. Such notice shall be made no less than 10 business days before
+such use; and
+3. If not disclosed on the employer or employment agency’s website, information about the type of data
+The New York City Council
+Printed on 4/3/2022
+Page 2 of 4
+powered by Legistar™
+
+Document 1: Employment decision. The term ""employment decision"" means to screen candidates for employment or employees for promotion within the city.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+§ 20-871 Requirements for automated employment decision tools.
+   a.   In the city, it shall be unlawful for an employer or an employment agency to use an automated employment decision tool to screen a candidate or
+employee for an employment decision unless:
+      1.   Such tool has been the subject of a bias audit conducted no more than one year prior to the use of such tool; and
+      2.   A summary of the results of the most recent bias audit of such tool as well as the distribution date of the tool to which such audit applies has been
+made publicly available on the website of the employer or employment agency prior to the use of such tool.
+   b.   Notices required. In the city, any employer or employment agency that uses an automated employment decision tool to screen an employee or a
+candidate who has applied for a position for an employment decision shall notify each such employee or candidate who resides in the city of the
+following:
+      1.   That an automated employment decision tool will be used in connection with the assessment or evaluation of such employee or candidate that
+resides in the city. Such notice shall be made no less than ten business days before such use and allow a candidate to request an alternative selection
+process or accommodation;
+      2.   The job qualifications and characteristics that such automated employment decision tool will use in the assessment of such candidate or
+employee. Such notice shall be made no less than 10 business days before such use; and
+      3.   If not disclosed on the employer or employment agency's website, information about the type of data collected for the automated employment
+decision tool, the source of such data and the employer or employment agency's data retention policy shall be available upon written request by a
+candidate or employee. Such information shall be provided within 30 days of the written request. Information pursuant to this section shall not be
+disclosed where such disclosure would violate local, state, or federal law, or interfere with a law enforcement investigation.
+(L.L. 2021/144, 12/11/2021, eff.
+
+Document 7: 3 
+ 
+Section 1.  Chapter 5 of Title 6 of the Rules of the City of New York is amended to add Subchapter T to read 
+as follows: 
+Subchapter T: Automated Employment Decision Tools 
+§ 5-300. Definitions. 
+As used in this subchapter, the following terms have the following meanings: 
+ 
+Automated Employment Decision Tool. “Automated employment decision tool” or “AEDT” means 
+“Automated employment decision tool” as defined by § 20-870 of the Code where the phrase “to 
+substantially assist or replace discretionary decision making” means: 
+i. 
+to rely solely on a simplified output (score, tag, classification, ranking, etc.), with no other 
+factors considered; or 
+ii. 
+ to use a simplified output as one of a set of criteria where the simplified output is weighted 
+more than any other criterion in the set; or   
+iii. 
+to use a simplified output to overrule conclusions derived from other factors including 
+human decision-making.  
+  
+Bias Audit. “Bias audit” means “Bias audit” as defined by § 20-870 of the Code.  
+ 
+Candidate for Employment. “Candidate for employment” means a person who has applied for a specific 
+employment position by submitting the necessary information or items in the format required by the 
+employer or employment agency.  
+ 
+Category. “Category” means any component 1 category required to be reported by employers pursuant 
+to subsection (c) of section 2000e-8 of title 42 of the United States Code as specified in part 1602.7 of 
+title 29 of the Code of Federal Regulations, as designated on the Equal Employment Opportunity 
+Commission Employer Information Report EEO-1. 
+ 
+Code. “Code” means the Administrative Code of the City of New York. 
+ 
+Distribution Date. “Distribution date” means the date the employer or employment agency began using 
+a specific AEDT.  
+ 
+Employment Decision. “Employment decision” means “Employment decision” as defined by § 20-870 
+of the Code. 
+ 
+Employment Agency. “Employment agency” means “Employment agency” as defined by 6 RCNY § 5-
+249.  
+ 
+Historical data.",[],"{'question_type': 'complex_situational', 'seed_document_id': 0, 'topic': 'Requirements'}","Certainly! An automated employment decision tool (AEDT) is any software, algorithm, or other automated system that is used to evaluate job candidates or make employment decisions. In New York City, there are certain conditions that must be met before an employer can use an AEDT. 
+
+Firstly, the AEDT must be audited for bias by an independent auditor. The audit must ensure that the AEDT does not discriminate against any protected class, such as race, gender, or age. 
+
+Secondly, the employer must ensure that the AEDT's calculations separately calculate the impact of the tool on race/ethnicity categories. 
+
+Thirdly, the employer must keep the distribution date of the AEDT posted. This is the date that the employer began using the specific AEDT. 
+
+Fourthly, the employer must make a summary of the AEDT's results publicly available. This summary must include the independent auditor's justification for any exclusion of data. 
+
+Finally, the employer must provide notice to any candidate for employment who is evaluated by the AEDT. This notice must explain that the candidate was evaluated by an AEDT and provide information on how to request further information about the AEDT's operation. 
+
+It's important to note that using an AEDT in violation of these requirements is considered unlawful in New York City.",False,"The agent's definition of an automated employment decision tool is incomplete and does not match the ground truth. Additionally, the conditions listed by the agent do not fully align with the requirements specified in the ground truth, such as the need for a bias audit within one year and the specific notification timeline for candidates.",1.0,0.7333333333333333,0.8362662196159363,0.99999999998
+"In the context of a bias audit, what is the definition of 'test data' and when can it be used?",'Test data' refers to data used to conduct a bias audit that is not historical data.,"Document 18: (a) Historical Data. A bias audit conducted pursuant to section 5-301 of this Chapter must use historical 
+data of the AEDT. The historical data used to conduct a bias audit may be from one or more employers 
+or employment agencies that use the AEDT. However, an individual employer or employment agency 
+may rely on a bias audit of an AEDT that uses the historical data of other employers or employment 
+agencies only in the following circumstances: if such employer or employment agency provided historical 
+data from its own use of the AEDT to the independent auditor conducting the bias audit or if such 
+employer or employment agency has never used the AEDT. 
+(b) Test Data. Notwithstanding the requirements of subdivision (a) of this section, an employer or 
+employment agency may rely on a bias audit that uses test data if insufficient historical data is available 
+to conduct a statistically significant bias audit. If a bias audit uses test data, the summary of results of the 
+bias audit must explain why historical data was not used and describe how the test data used was 
+generated and obtained.  
+ 
+Example 1: An employer is planning to use an AEDT for the first time. The employer may rely on a bias 
+audit conducted using the historical data of other employers or employment agencies, or on a bias audit 
+conducted using test data.
+
+Document 19: 9 
+ 
+Example 2: An employment agency has been using an AEDT for 6 months. The bias audit the 
+employment agency relied on before its first use of the AEDT was conducted 10 months ago using test 
+data. The employment agency will need an updated bias audit if it will continue to use the AEDT once 12 
+months have passed since the bias audit it first relied on was conducted. The employment agency’s data 
+from 6 months of use of the AEDT is not sufficient on its own to conduct a statistically significant bias 
+audit. The employment agency may rely on a bias audit using the historical data of other employers and 
+employment agencies if it provides its 6 months of historical data to the independent auditor for use and 
+consideration. The employment agency may also rely on a bias audit that uses test data. 
+ 
+Example 3: An employer has been using an AEDT for 3 years and will soon need an updated bias audit. 
+The employer has statistically significant data from its 3 years of use of the AEDT. The employer may 
+rely on a bias audit conducted using historical data from multiple employers if it provides its 3 years of 
+historical data to the independent auditor for use and consideration. The employer may also rely on a 
+bias audit conducted using historical data from its own use of the AEDT, without any data from other 
+employers or employment agencies. The employer may not rely on a bias audit conducted using test 
+data.  
+ 
+§ 5-303 Published Results. 
+(a) Before the use of an AEDT, an employer or employment agency in the city must make the following 
+publicly available on the employment section of their website in a clear and conspicuous manner:  
+(1) 
+The date of the most recent bias audit of the AEDT and a summary of the results, which shall 
+include the source and explanation of the data used to conduct the bias audit, the number of 
+individuals the AEDT assessed that fall within an unknown category, and the number of 
+applicants or candidates, the selection or scoring rates, as applicable, and the impact ratios 
+for all categories; and, 
+(2) 
+The distribution date of the AEDT.
+
+Document 11: 5 
+ 
+ 
+Test data. “Test data” means data used to conduct a bias audit that is not historical data. 
+§ 5-301 Bias Audit. 
+(a) An employer or employment agency may not use or continue to use an AEDT if more than one year has 
+passed since the most recent bias audit of the AEDT.  
+(b) Where an AEDT selects candidates for employment or employees being considered for promotion to 
+move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum: 
+(1) Calculate the selection rate for each category; 
+(2) Calculate the impact ratio for each category; 
+(3) Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately 
+calculate the impact of the AEDT on: 
+i. Sex categories (e.g., impact ratio for selection of male candidates vs female candidates),  
+ii. Race/Ethnicity categories (e.g., impact ratio for selection of Hispanic or Latino 
+candidates vs Black or African American [Not Hispanic or Latino] candidates), and 
+iii. intersectional categories of sex, ethnicity, and race (e.g., impact ratio for selection of 
+Hispanic or Latino male candidates vs. Not Hispanic or Latino Black or African American 
+female candidates). 
+(4) Ensure that the calculations in paragraphs (1), (2), and (3) of this subdivision are performed for 
+each group, if an AEDT classifies candidates for employment or employees being considered 
+for promotion into specified groups (e.g., leadership styles); and 
+(5) Indicate the number of individuals the AEDT assessed that are not included in the required 
+calculations because they fall within an unknown category. 
+ 
+Example: An employer wants to use an AEDT to screen resumes and schedule interviews for a job 
+posting. To do so, the employer must ensure that a bias audit of the AEDT was conducted no more than 
+a year before the planned use of the AEDT. This bias audit is necessary even though the employer is not 
+using the AEDT to make the final hiring decision, but only to screen at an early point in the application 
+process. The employer asks the vendor for a bias audit.
+
+Document 17: 8 
+ 
+ 
+Intersectional Categories 
+ 
+ 
+ 
+# of 
+Applicants 
+Scoring 
+Rate 
+Impact 
+Ratio 
+Hispanic or Latino 
+Male 
+16 
+75% 
+1.00 
+Female 
+12 
+50% 
+0.67 
+Non/Hispanic or 
+Latino 
+Male 
+White 
+20 
+35% 
+0.47 
+Black or African American 
+20 
+50% 
+0.67 
+Native Hawaiian or Pacific Islander 
+4 
+75% 
+1.00 
+Asian 
+12 
+58.3% 
+0.78 
+Native American or Alaska Native 
+8 
+62.5 
+0.83 
+Two or More Races 
+12 
+50% 
+0.67 
+Female 
+White 
+20 
+40% 
+0.53 
+Black or African American 
+12 
+50% 
+.67 
+Native Hawaiian or Pacific Islander 
+4 
+50% 
+0.67 
+Asian 
+12 
+25% 
+0.33 
+Native American or Alaska Native 
+8 
+62.5% 
+0.83 
+Two or More Races 
+8 
+50% 
+0.67 
+ 
+Note: The AEDT was used to assess 15 individuals with an unknown sex or race/ethnicity category. Data on 
+these individuals was not included in the calculations above. 
+§ 5-302 Data Requirements. 
+(a) Historical Data. A bias audit conducted pursuant to section 5-301 of this Chapter must use historical 
+data of the AEDT. The historical data used to conduct a bias audit may be from one or more employers 
+or employment agencies that use the AEDT. However, an individual employer or employment agency 
+may rely on a bias audit of an AEDT that uses the historical data of other employers or employment 
+agencies only in the following circumstances: if such employer or employment agency provided historical 
+data from its own use of the AEDT to the independent auditor conducting the bias audit or if such 
+employer or employment agency has never used the AEDT. 
+(b) Test Data. Notwithstanding the requirements of subdivision (a) of this section, an employer or 
+employment agency may rely on a bias audit that uses test data if insufficient historical data is available 
+to conduct a statistically significant bias audit.",[],"{'question_type': 'complex_situational', 'seed_document_id': 18, 'topic': 'Definitions'}","In the context of a bias audit, 'test data' refers to a set of data that is used to evaluate the performance of an automated employment decision tool (AEDT) in predicting outcomes. Test data can be used when there is insufficient historical data available to conduct a statistically significant bias audit. The test data should be representative of the population that the AEDT will be used to evaluate, and should be used to assess the accuracy and fairness of the AEDT's predictions. It is important to note that test data should not be used as a substitute for historical data in a bias audit, but rather as a supplement when historical data is not available.",False,"The agent's answer provides an overly detailed definition of 'test data' and includes information about its use in evaluating automated employment decision tools, which is not part of the ground truth. The ground truth simply states that 'test data' refers to data used in a bias audit that is not historical data.",1.0,0.3333333333333333,0.972531795501709,0.99999999998
+"As an employer conducting a bias audit, I want to know the threshold for excluding a category from impact ratio calculations. Can you clarify what percentage of data a category must represent to be excluded?",An independent auditor may exclude a category that represents less than 2% of the data being used for the bias audit from the required calculations for impact ratio.,"Document 16: (d) Notwithstanding the requirements of paragraphs (2) and (3) of subdivision (b) and paragraphs (3) and 
+(4) of subdivision (c), an independent auditor may exclude a category that represents less than 2% of 
+the data being used for the bias audit from the required calculations for impact ratio. Where such a 
+category is excluded, the summary of results must include the independent auditor’s justification for the 
+exclusion, as well as the number of applicants and scoring rate or selection rate for the excluded 
+category.  
+ 
+Example: An employer uses an AEDT to score applicants for “culture fit.” To do so, the employer must 
+ensure that a bias audit of the AEDT was conducted no more than a year before the use of the AEDT. 
+The employer provides historical data on “culture fit” score of applicants for each category to an 
+independent auditor to conduct a bias audit as follows:  
+ 
+Sex Categories 
+  
+# of 
+Applicants 
+Scoring 
+Rate 
+Impact Ratio 
+Male 
+92 
+54.3% 
+1.00 
+Female 
+76 
+44.7% 
+0.82 
+ 
+ 
+Race/Ethnicity Categories 
+  
+# of 
+Applicants 
+Scoring 
+Rate 
+Impact 
+Ratio 
+Hispanic or Latino 
+28 
+64.2% 
+1.00 
+White (Not Hispanic or Latino) 
+40 
+37.5% 
+0.58 
+Black or African American (Not Hispanic or Latino) 
+32 
+50.0% 
+0.78 
+Native Hawaiian or Pacific Islander (Not Hispanic or Latino) 
+8 
+62.5% 
+0.97 
+Asian (Not Hispanic or Latino) 
+24 
+41.7% 
+0.65 
+Native American or Alaska Native (Not Hispanic or Latino) 
+16 
+62.5% 
+0.97 
+Two or More Races (Not Hispanic or Latino) 
+20 
+50.0% 
+0.78
+
+Document 15: 7 
+ 
+(3) Calculate the impact ratio for each category;  
+(4) Ensure that the calculations required in paragraphs (1), (2), and (3) of this subdivision 
+separately calculate the impact of the AEDT on: 
+i. Sex categories (i.e., impact ratio for selection of male candidates vs female candidates),  
+ii. Race/Ethnicity categories (e.g., impact ratio for selection of Hispanic or Latino 
+candidates vs Black or African American [Not Hispanic or Latino] candidates), and 
+iii. intersectional categories of sex, ethnicity, and race (e.g., impact ratio for selection of 
+Hispanic or Latino male candidates vs. Not Hispanic or Latino Black or African American 
+female candidates); and  
+(5) Indicate the number of individuals the AEDT assessed that are not included in the required 
+calculations because they fall within an unknown category. 
+(d) Notwithstanding the requirements of paragraphs (2) and (3) of subdivision (b) and paragraphs (3) and 
+(4) of subdivision (c), an independent auditor may exclude a category that represents less than 2% of 
+the data being used for the bias audit from the required calculations for impact ratio. Where such a 
+category is excluded, the summary of results must include the independent auditor’s justification for the 
+exclusion, as well as the number of applicants and scoring rate or selection rate for the excluded 
+category.  
+ 
+Example: An employer uses an AEDT to score applicants for “culture fit.” To do so, the employer must 
+ensure that a bias audit of the AEDT was conducted no more than a year before the use of the AEDT.",[],"{'question_type': 'complex_situational', 'seed_document_id': 16, 'topic': 'Metrics/Data'}","I'm sorry, but the context information provided does not contain the specific information you are asking for. The knowledge graph only provides information on the relationships and properties of entities related to bias audits and automated employment decision tools. It does not mention any specific threshold for excluding a category from impact ratio calculations.",False,"The agent did not provide the specific threshold of 2% for excluding a category from impact ratio calculations, which is the key information requested.",1.0,0.0,0.0,0.9999999999666667

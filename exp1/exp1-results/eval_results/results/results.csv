@@ -1,0 +1,270 @@
+id,question,reference_answer,reference_context,conversation_history,metadata,agent_answer,correctness,correctness_reason,RAGAS Context Recall,RAGAS Faithfulness,RAGAS Answer Relevancy,RAGAS Context Precision
+fc76bbf8-8014-49c7-94c7-8196f0d629f8,Where can a proceeding to recover a civil penalty be returnable to?,A proceeding to recover a civil penalty authorized by this subchapter can be returnable to any tribunal established within the office of administrative trials and hearings or within any agency of the city designated to conduct such proceedings.,"Document 26: d. A proceeding to recover any civil penalty authorized by this subchapter is returnable to any tribunal
+established within the office of administrative trials and hearings or within any agency of the city designated to
+conduct such proceedings.
+§ 20-873 Enforcement. The corporation counsel or such other persons designated by the corporation
+counsel
+on behalf
+of
+the
+department may initiate in any court of competent jurisdiction any action or
+proceeding that may be appropriate or necessary for correction of any violation issued pursuant this subchapter,
+including mandating compliance with the provisions of this chapter or such other relief as may be appropriate.
+§ 20-874 Construction. The provisions of this subchapter shall not be construed to limit any right of any
+candidate or employee for an employment decision to bring a civil action in any court of competent
+jurisdiction, or to limit the authority of the commission on human rights to enforce the provisions of title 8, in
+The New York City Council
+Printed on 4/3/2022
+Page 3 of 4
+powered by Legistar™
+
+Document 3: d.   A proceeding to recover any civil penalty authorized by this subchapter is returnable to any tribunal established within the office of administrative
+trials and hearings or within any agency of the city designated to conduct such proceedings.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+§ 20-873 Enforcement.
+The corporation counsel or such other persons designated by the corporation counsel on behalf of the department may initiate in any court of competent
+jurisdiction any action or proceeding that may be appropriate or necessary for correction of any violation issued pursuant this subchapter, including
+mandating compliance with the provisions of this chapter or such other relief as may be appropriate.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+§ 20-874 Construction.
+The provisions of this subchapter shall not be construed to limit any right of any candidate or employee for an employment decision to bring a civil action
+in any court of competent jurisdiction, or to limit the authority of the commission on human rights to enforce the provisions of title 8, in accordance with
+law.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)",[],"{'question_type': 'simple', 'seed_document_id': 26, 'topic': 'Automated Employment Decision Tools', 'distracting_context': None, 'situational_context': None, 'original_questions': None, 'fake_fact': None}",A proceeding to recover a civil penalty can be returnable to any tribunal established within the Office of Administrative Trials and Hearings or within any agency of the city designated to conduct such proceedings.,True,,1.0,1.0,0.9947089722622297,0.999999999975
+21a627c7-41a7-4e35-9230-db785ea3da33,What information does the bias audit summary need to include?,"The bias audit summary needs to include the source and explanation of the data used to conduct the bias audit, the number of individuals the AEDT assessed that fall within an unknown category, and the number of applicants or candidates, the selection or scoring rates, as applicable, and the impact ratios for all categories.","Document 19: 9 
+ 
+Example 2: An employment agency has been using an AEDT for 6 months. The bias audit the 
+employment agency relied on before its first use of the AEDT was conducted 10 months ago using test 
+data. The employment agency will need an updated bias audit if it will continue to use the AEDT once 12 
+months have passed since the bias audit it first relied on was conducted. The employment agency’s data 
+from 6 months of use of the AEDT is not sufficient on its own to conduct a statistically significant bias 
+audit. The employment agency may rely on a bias audit using the historical data of other employers and 
+employment agencies if it provides its 6 months of historical data to the independent auditor for use and 
+consideration. The employment agency may also rely on a bias audit that uses test data. 
+ 
+Example 3: An employer has been using an AEDT for 3 years and will soon need an updated bias audit. 
+The employer has statistically significant data from its 3 years of use of the AEDT. The employer may 
+rely on a bias audit conducted using historical data from multiple employers if it provides its 3 years of 
+historical data to the independent auditor for use and consideration. The employer may also rely on a 
+bias audit conducted using historical data from its own use of the AEDT, without any data from other 
+employers or employment agencies. The employer may not rely on a bias audit conducted using test 
+data.  
+ 
+§ 5-303 Published Results. 
+(a) Before the use of an AEDT, an employer or employment agency in the city must make the following 
+publicly available on the employment section of their website in a clear and conspicuous manner:  
+(1) 
+The date of the most recent bias audit of the AEDT and a summary of the results, which shall 
+include the source and explanation of the data used to conduct the bias audit, the number of 
+individuals the AEDT assessed that fall within an unknown category, and the number of 
+applicants or candidates, the selection or scoring rates, as applicable, and the impact ratios 
+for all categories; and, 
+(2) 
+The distribution date of the AEDT.
+
+Document 18: (a) Historical Data. A bias audit conducted pursuant to section 5-301 of this Chapter must use historical 
+data of the AEDT. The historical data used to conduct a bias audit may be from one or more employers 
+or employment agencies that use the AEDT. However, an individual employer or employment agency 
+may rely on a bias audit of an AEDT that uses the historical data of other employers or employment 
+agencies only in the following circumstances: if such employer or employment agency provided historical 
+data from its own use of the AEDT to the independent auditor conducting the bias audit or if such 
+employer or employment agency has never used the AEDT. 
+(b) Test Data. Notwithstanding the requirements of subdivision (a) of this section, an employer or 
+employment agency may rely on a bias audit that uses test data if insufficient historical data is available 
+to conduct a statistically significant bias audit. If a bias audit uses test data, the summary of results of the 
+bias audit must explain why historical data was not used and describe how the test data used was 
+generated and obtained.  
+ 
+Example 1: An employer is planning to use an AEDT for the first time. The employer may rely on a bias 
+audit conducted using the historical data of other employers or employment agencies, or on a bias audit 
+conducted using test data.
+
+Document 11: 5 
+ 
+ 
+Test data. “Test data” means data used to conduct a bias audit that is not historical data. 
+§ 5-301 Bias Audit. 
+(a) An employer or employment agency may not use or continue to use an AEDT if more than one year has 
+passed since the most recent bias audit of the AEDT.  
+(b) Where an AEDT selects candidates for employment or employees being considered for promotion to 
+move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum: 
+(1) Calculate the selection rate for each category; 
+(2) Calculate the impact ratio for each category; 
+(3) Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately 
+calculate the impact of the AEDT on: 
+i. Sex categories (e.g., impact ratio for selection of male candidates vs female candidates),  
+ii. Race/Ethnicity categories (e.g., impact ratio for selection of Hispanic or Latino 
+candidates vs Black or African American [Not Hispanic or Latino] candidates), and 
+iii. intersectional categories of sex, ethnicity, and race (e.g., impact ratio for selection of 
+Hispanic or Latino male candidates vs. Not Hispanic or Latino Black or African American 
+female candidates). 
+(4) Ensure that the calculations in paragraphs (1), (2), and (3) of this subdivision are performed for 
+each group, if an AEDT classifies candidates for employment or employees being considered 
+for promotion into specified groups (e.g., leadership styles); and 
+(5) Indicate the number of individuals the AEDT assessed that are not included in the required 
+calculations because they fall within an unknown category. 
+ 
+Example: An employer wants to use an AEDT to screen resumes and schedule interviews for a job 
+posting. To do so, the employer must ensure that a bias audit of the AEDT was conducted no more than 
+a year before the planned use of the AEDT. This bias audit is necessary even though the employer is not 
+using the AEDT to make the final hiring decision, but only to screen at an early point in the application 
+process. The employer asks the vendor for a bias audit.
+
+Document 12: Example: An employer wants to use an AEDT to screen resumes and schedule interviews for a job 
+posting. To do so, the employer must ensure that a bias audit of the AEDT was conducted no more than 
+a year before the planned use of the AEDT. This bias audit is necessary even though the employer is not 
+using the AEDT to make the final hiring decision, but only to screen at an early point in the application 
+process. The employer asks the vendor for a bias audit. The vendor provides historical data regarding 
+applicant selection that the vendor has collected from multiple employers to an independent auditor who 
+will conduct a bias audit as follows:  
+ 
+Sex Categories 
+  
+# of 
+Applicants 
+# 
+Selected 
+Selection 
+Rate 
+Impact Ratio 
+Male 
+1390 
+667 
+48% 
+1.00 
+Female 
+1181 
+555 
+47% 
+0.979",[],"{'question_type': 'simple', 'seed_document_id': 19, 'topic': 'Bias Audit of AEDT', 'distracting_context': None, 'situational_context': None, 'original_questions': None, 'fake_fact': None}","A bias audit summary should include the following information:
+
+1. **Results of the Bias Audit**:
+   - Scoring rates for different sex and race/ethnicity categories.
+   - Impact ratios for these categories.
+
+2. **Exclusions**:
+   - If any category is excluded from the bias audit calculations, the summary must provide the criteria and rationale for such exclusions.",False,"The agent's answer is missing key elements such as the source and explanation of the data used, the number of individuals assessed that fall within an unknown category, and the number of applicants or candidates.",1.0,1.0,0.974510675527837,0.5833333333041666
+3b3eb0d0-b011-498b-8bf2-1f75bf2b36b3,Where can a proceeding to recover a civil penalty be returnable?,A proceeding to recover a civil penalty authorized by this subchapter can be returnable to any tribunal established within the office of administrative trials and hearings or within any agency of the city designated to conduct such proceedings.,"Document 3: d.   A proceeding to recover any civil penalty authorized by this subchapter is returnable to any tribunal established within the office of administrative
+trials and hearings or within any agency of the city designated to conduct such proceedings.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+§ 20-873 Enforcement.
+The corporation counsel or such other persons designated by the corporation counsel on behalf of the department may initiate in any court of competent
+jurisdiction any action or proceeding that may be appropriate or necessary for correction of any violation issued pursuant this subchapter, including
+mandating compliance with the provisions of this chapter or such other relief as may be appropriate.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+§ 20-874 Construction.
+The provisions of this subchapter shall not be construed to limit any right of any candidate or employee for an employment decision to bring a civil action
+in any court of competent jurisdiction, or to limit the authority of the commission on human rights to enforce the provisions of title 8, in accordance with
+law.
+(L.L. 2021/144, 12/11/2021, eff. 1/1/2023)
+
+Document 26: d. A proceeding to recover any civil penalty authorized by this subchapter is returnable to any tribunal
+established within the office of administrative trials and hearings or within any agency of the city designated to
+conduct such proceedings.
+§ 20-873 Enforcement. The corporation counsel or such other persons designated by the corporation
+counsel
+on behalf
+of
+the
+department may initiate in any court of competent jurisdiction any action or
+proceeding that may be appropriate or necessary for correction of any violation issued pursuant this subchapter,
+including mandating compliance with the provisions of this chapter or such other relief as may be appropriate.
+§ 20-874 Construction. The provisions of this subchapter shall not be construed to limit any right of any
+candidate or employee for an employment decision to bring a civil action in any court of competent
+jurisdiction, or to limit the authority of the commission on human rights to enforce the provisions of title 8, in
+The New York City Council
+Printed on 4/3/2022
+Page 3 of 4
+powered by Legistar™",[],"{'question_type': 'simple', 'seed_document_id': 3, 'topic': 'Automated Employment Decision Tools', 'distracting_context': None, 'situational_context': None, 'original_questions': None, 'fake_fact': None}",A proceeding to recover a civil penalty can be returnable to any tribunal established within the Office of Administrative Trials and Hearings or within any agency of the city designated to conduct such proceedings.,True,"The agent's answer correctly identifies where a proceeding to recover a civil penalty can be returnable, matching the key elements of the ground truth answer.",1.0,1.0,0.9823498756278832,0.999999999975
+c033db74-1ec3-422e-bbbf-c57f8a354338,What does 'simplified output' refer to?,"'Simplified output' refers to a prediction or classification generated by machine learning, statistical modeling, data analytics, or artificial intelligence. It can take the form of a score, tag, recommendation, or ranking.","Document 10: Scoring Rate. “Scoring Rate” means the rate at which individuals in a category receive a score above 
+the sample’s median score, where the score has been calculated by an AEDT. 
+ 
+Screen. “Screen” means to make a determination about whether a candidate for employment or 
+employee being considered for promotion should be selected or advanced in the hiring or promotion 
+process.  
+ 
+Selection Rate. “Selection rate” means the rate at which individuals in a category are either selected to 
+move forward in the hiring process or assigned a classification by an AEDT. Such rate may be calculated 
+by dividing the number of individuals in the category moving forward or assigned a classification by the 
+total number of individuals in the category who applied for a position or were considered for promotion.  
+ 
+Example. If 100 Hispanic women apply for a position and 40 are selected for an interview after use of an 
+AEDT, the selection rate for Hispanic women is 40/100 or 40%.  
+ 
+Simplified output. “Simplified output” means a prediction or classification as specified in the definition 
+for “machine learning, statistical modelling, data analytics, or artificial intelligence.” A simplified output 
+may take the form of a score (e.g., rating a candidate’s estimated technical skills), tag or categorization 
+(e.g., categorizing a candidate’s resume based on key words, assigning a skill or trait to a candidate), 
+recommendation (e.g., whether a candidate should be given an interview), or ranking (e.g., arranging a 
+list of candidates based on how well their cover letters match the job description). It does not refer to the 
+output from analytical tools that translate or transcribe existing text, e.g., convert a resume from a PDF 
+or transcribe a video or audio interview.
+
+Document 9: 4 
+ 
+iii. 
+at any point during the bias audit, has a direct financial interest or a material indirect 
+financial interest in an employer or employment agency that seeks to use or continue to 
+use the  AEDT or in a vendor that developed or distributed the AEDT. 
+ 
+Impact Ratio. “Impact ratio” means either (1) the selection rate for a category divided by the selection 
+rate of the most selected category or (2) the scoring rate for a category divided by the scoring rate for the 
+highest scoring category.  
+ 
+ 
+ 
+    _________selection rate for a category________  
+Impact Ratio =        selection rate of the most selected category  
+ 
+OR 
+ 
+  
+ 
+     ______scoring rate for a category__________  
+Impact Ratio =        scoring rate of the highest scoring category 
+ 
+ 
+Machine learning, statistical modeling, data analytics, or artificial intelligence. “Machine learning, 
+statistical modeling, data analytics, or artificial intelligence” means a group of mathematical, computer-
+based techniques:  
+i. 
+that generate a prediction, meaning an expected outcome for an observation, such as an 
+assessment of a candidate’s fit or likelihood of success, or that generate a classification, 
+meaning an assignment of an observation to a group, such as categorizations based on 
+skill sets or aptitude; and  
+ii. 
+for which a computer at least in part identifies the inputs, the relative importance placed 
+on those inputs, and, if applicable, other parameters for the models in order to improve 
+the accuracy of the prediction or classification. 
+ 
+Scoring Rate. “Scoring Rate” means the rate at which individuals in a category receive a score above 
+the sample’s median score, where the score has been calculated by an AEDT. 
+ 
+Screen. “Screen” means to make a determination about whether a candidate for employment or 
+employee being considered for promotion should be selected or advanced in the hiring or promotion 
+process.  
+ 
+Selection Rate. “Selection rate” means the rate at which individuals in a category are either selected to 
+move forward in the hiring process or assigned a classification by an AEDT. Such rate may be calculated 
+by dividing the number of individuals in the category moving forward or assigned a classification by the 
+total number of individuals in the category who applied for a position or were considered for promotion.  
+ 
+Example.",[],"{'question_type': 'simple', 'seed_document_id': 10, 'topic': 'Bias Audit of AEDT', 'distracting_context': None, 'situational_context': None, 'original_questions': None, 'fake_fact': None}","""Simplified output"" refers to a prediction or classification generated by machine learning, statistical modeling, data analytics, or artificial intelligence. This output can take various forms, such as:
+
+- A score (e.g., rating a candidate’s estimated technical skills)
+- A tag or categorization (e.g., categorizing a candidate’s resume based on key words, assigning a skill or trait to a candidate)
+- A recommendation (e.g., whether a candidate should be given an interview)
+- A ranking (e.g., arranging a list of candidates based on how well their cover letters match the job description)
+
+It does not include outputs from analytical tools that translate or transcribe existing text, such as converting a resume from a PDF or transcribing a video or audio interview.",True,"The agent's answer accurately describes 'simplified output' as a prediction or classification generated by machine learning, statistical modeling, data analytics, or artificial intelligence, and provides examples of the forms it can take. The additional details do not contradict the ground truth.",1.0,1.0,0.9369700768068439,0.9999999999
+2d0c4550-5262-4749-a000-27e619210ad1,What is the effective date of this local law?,"This local law takes effect on January 1, 2023.","Document 27: File #: Int 1894-2020, Version: A
+jurisdiction, or to limit the authority of the commission on human rights to enforce the provisions of title 8, in
+accordance with law.
+§ 2.  This local law takes effect on January 1, 2023.
+SJ/ IB
+LS #11903
+11/1/2021 11:32 pm
+The New York City Council
+Printed on 4/3/2022
+Page 4 of 4
+powered by Legistar™",[],"{'question_type': 'simple', 'seed_document_id': 27, 'topic': 'Others', 'distracting_context': None, 'situational_context': None, 'original_questions': None, 'fake_fact': None}",Could you please provide the specific local law you are referring to? This will help me give you the most accurate information.,False,"The agent did not provide the effective date of the local law, which is January 1, 2023. Instead, it asked for more information.",1.0,0.0,0.0,0.9999999999666667

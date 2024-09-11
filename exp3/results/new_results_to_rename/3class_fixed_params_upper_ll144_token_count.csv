@@ -1,0 +1,245 @@
+question,classification,question_tokens,history_tokens,retrieved_nodes_tokens,generated_queries_tokens,output_tokens,total_input_tokens,total_output_tokens
+"As an employer, I need to understand the definition of 'Candidate for Employment' as stated in the legal documents. Can you provide me with the specific criteria that determine whether someone is considered a candidate for employment?",,42,0,2805,62,70,2847,132
+I'm an employer in New York City and want to understand the requirements for using an automated employment decision tool. Can you explain the definition of an automated employment decision tool and the conditions that need to be met before using it?,,45,0,3035,54,428,3080,482
+"In the context of a bias audit, what is the definition of 'test data' and when can it be used?",,24,0,3048,47,106,3072,153
+"As an employer conducting a bias audit, I want to know the threshold for excluding a category from impact ratio calculations. Can you clarify what percentage of data a category must represent to be excluded?",,38,0,2423,67,77,2461,144
+"I need to know the effective date of Local Law 27 (File #: Int 1894-2020, Version: A). Can you confirm when this law will take effect?",,37,0,2588,55,70,2625,125
+I want to understand what an automated employment decision tool is and how it impacts employment decisions. Can you provide a simplified definition and explain the requirements for using such a tool in the city?,,37,0,2875,40,279,2912,319
+I'm an employer in New York City and want to understand the requirements for using an automated employment decision tool. Could you explain what constitutes an automated employment decision tool and the conditions that must be met for its use?,,43,0,3043,41,441,3086,482
+"If I need to initiate a proceeding to recover a civil penalty authorized by this subchapter, which tribunals or agencies can I return it to?",,30,0,2368,57,60,2398,117
+I need to know the effective date of this local law mentioned in Document 27.,,17,0,2586,44,31,2603,75
+"As an employer or employment agency in the city, what are the acceptable methods to provide notice to a candidate for employment about the use of an AEDT?",,32,0,2791,69,195,2823,264
+"As an employer in New York City, I want to understand the purpose of a bias audit for automated employment decision tools. Can you explain what a bias audit entails and why it is required?",,38,0,2735,53,252,2773,305
+I'm reviewing a policy document and came across the term 'Impact Ratio.' Can you explain what it means and how it is calculated?,,27,0,3036,39,228,3063,267
+"As a Native Hawaiian or Pacific Islander applicant, what is the scoring rate for me in the intersectional categories compared to other racial/ethnic groups?",,30,0,3049,68,83,3079,151
+I'm trying to understand the definition of 'Automated Employment Decision Tool' according to the New York City Administrative Code. Can you explain what it means and provide examples of how it can be used?,,40,0,3035,36,208,3075,244
+"In the bias audit calculations, what is the minimum percentage of data that can be excluded from the calculations? Can you provide an example of a category that can be excluded and the information that should be included in the summary of results?",,46,0,2423,60,180,2469,240
+What information about bias audits of an AEDT must be publicly available before its use?,,18,0,2423,51,141,2441,192
+I'm reviewing the regulations regarding Automated Employment Decision Tools (AEDTs) in New York City. Can you explain what a 'Bias Audit' entails in this context and who can conduct it?,,39,0,2851,66,234,2890,300
+"Before using an AEDT, what information must an employer or employment agency make publicly available on their website?",,22,0,2535,38,148,2557,186
+"I am an employer planning to use an AEDT for screening resumes and scheduling interviews. Can you explain the requirements for conducting a bias audit of the AEDT, including the calculation of impact ratio for different categories such as sex, race/ethnicity, and intersectional categories?",,57,0,2339,84,430,2396,514
+I have been using an AEDT for 6 months and need to conduct a bias audit. Can I rely on my own historical data or do I need to provide data from other employers?,,39,0,2423,51,131,2462,182
+"I'm considering using an AEDT for hiring and want to ensure compliance. Can you explain the requirements for a bias audit, including the calculation of impact ratios for different race/ethnicity and sex categories?",,42,0,2716,34,306,2758,340
+I want to conduct a bias audit for an AEDT. What are the specific requirements for calculating the impact ratio for different race/ethnicity and sex categories?,,33,0,2628,49,267,2661,316
+I'm reviewing a policy document and came across the term 'Impact Ratio'. Can you explain what it means and how it is calculated?,,27,0,3036,30,228,3063,258
+"I want to conduct a bias audit for an AEDT. What are the requirements for calculating the impact ratio for sex, race/ethnicity, and intersectional categories? Are there any criteria for excluding certain categories from the calculations?",,47,0,2628,52,226,2675,278
+"Why is a bias audit necessary for an AEDT, and what are the minimum requirements for conducting a bias audit?",,24,0,2365,36,298,2389,334
+Where can a proceeding to recover a civil penalty be returnable to?,,14,0,2325,58,66,2339,124
+What information does the bias audit summary need to include?,,11,0,2154,27,185,2165,212
+Where can a proceeding to recover a civil penalty be returnable?,,13,0,2289,46,68,2302,114
+What does 'simplified output' refer to?,,10,0,2392,34,91,2402,125
+What is the effective date of this local law?,,10,0,2555,45,20,2565,65
+What is the purpose of the AEDT in the bias audit?,,14,0,2185,38,126,2199,164
+What is the definition of an automated employment decision tool?,,11,0,2746,34,137,2757,171
+What must a bias audit of an AEDT calculate?,,12,0,2290,37,147,2302,184
+What is the purpose of a bias audit for an AEDT?,,14,0,2365,51,136,2379,187
+What are the options for an employer or employment agency to provide notice to a candidate for employment who resides in the city?,,24,0,2491,74,132,2515,206
+What are the requirements for the published results of a bias audit?,,13,0,2685,34,235,2698,269
+What is the definition of 'Bias audit'?,,9,0,2273,21,110,2282,131
+What is the definition of an Automated Employment Decision Tool (AEDT)?,,15,0,2722,46,133,2737,179
+What information must be publicly available before the use of an AEDT?,,15,0,2635,43,132,2650,175
+What is the definition of 'Bias audit' in the context of automated employment decision tools?,,18,0,2735,38,131,2753,169
+What are the calculations required in the bias audit for the impact ratio?,,14,0,2839,53,276,2853,329
+What are the requirements for using an automated employment decision tool in the city?,,15,0,2875,36,335,2890,371
+What is the criteria for excluding a category from the required calculations for impact ratio?,,16,0,2743,30,78,2759,108
+What are the requirements for a bias audit of an AEDT?,,14,0,2365,44,306,2379,350
+What is the purpose of the AEDT in conducting a bias audit?,,15,0,2365,34,128,2380,162
+What is the definition of 'automated employment decision tool'?,,12,0,2746,44,135,2758,179
+What is the purpose of a bias audit for automated employment decision tools?,,14,0,2845,33,182,2859,215
+What are the requirements for the published results of the bias audit?,,13,0,2458,38,226,2471,264
+Where can a proceeding to recover a civil penalty authorized by this subchapter be returnable to?,,19,0,2325,54,60,2344,114
+In which tribunals or agencies can a proceeding to recover a civil penalty be filed according to the subchapter?,,23,0,2330,64,54,2353,118
+"What are the specific calculations and requirements for conducting a bias audit of an AEDT, including the categories that need to be considered and the conditions under which historical data or test data can be used?",,40,0,2339,62,395,2379,457
+What is the definition of 'Impact Ratio' and how is it calculated in relation to the selection rate or scoring rate of different categories?,,27,0,2753,26,132,2780,158
+When does this local law come into effect?,,9,0,2586,32,21,2595,53
+What is the difference between historical data and test data in the context of conducting a bias audit for an AEDT?,,24,0,2931,60,169,2955,229
+What are the requirements for conducting a bias audit for an AEDT? Can an employer or employment agency use test data for the bias audit if there is insufficient historical data available?,,36,0,2712,49,342,2748,391
+"According to the document, what is the definition of 'Candidate for Employment'?",,15,0,2614,38,75,2629,113
+Can you explain the meaning of 'Bias Audit' as defined by § 20-870 of the Code?,,22,0,2177,40,194,2199,234
+"What are the steps and criteria for conducting a bias audit of an AEDT, including the calculation of impact ratios for different categories such as sex, race/ethnicity, and intersectional categories?",,40,0,2416,91,400,2456,491
+What information does an employer or employment agency need to make publicly available before using an AEDT?,,20,0,2389,52,156,2409,208
+To which tribunals or agencies can a proceeding to recover a civil penalty authorized by this subchapter be brought?,,23,0,2560,51,55,2583,106
+"What are the specific calculations that must be performed in a bias audit of an AEDT for candidate selection or promotion, and what are the categories that these calculations must be separately performed for?",,38,0,2357,54,278,2395,332
+What specific calculations must be performed for each category in a bias audit of an AEDT?,,19,0,2621,50,243,2640,293
+What is the role of the AEDT in conducting bias audits and what are the requirements for using historical data in the audit?,,26,0,2644,38,174,2670,212
+What is the definition of an automated employment decision tool and what are the requirements for its use in the city?,,22,0,2875,32,274,2897,306
+What is the role of the AEDT in the bias audit and under what circumstances can an employer or employment agency rely on a bias audit using test data?,,32,0,2423,51,179,2455,230
+"According to the document, what is the definition of 'employment decision' and what are the requirements for using an automated employment decision tool?",,27,0,2883,26,171,2910,197
+"What are the specific calculations and requirements that must be performed during a bias audit of an AEDT for selection rates, impact ratios, and categories of sex, race/ethnicity, and intersectionality?",,41,0,2349,79,466,2390,545
+"According to the information provided, what is the meaning of 'Bias Audit' in the context of automated employment decision tools?",,24,0,2814,42,183,2838,225
+What is the distinction between historical data and test data in the context of conducting a bias audit for an AEDT?,,24,0,2415,56,157,2439,213
+Under what condition can an independent auditor exclude a category from the required calculations for impact ratio?,,18,0,2620,46,92,2638,138
+What are the requirements and notices that an employer or employment agency must comply with when using an automated employment decision tool to screen candidates or employees for an employment decision?,,32,0,2942,83,415,2974,498
+What are the different methods available for an employer or employment agency to notify a candidate for employment residing in the city about the use of an AEDT?,,31,0,2824,83,137,2855,220
+What are the criteria and calculations required for conducting a bias audit on the published results of an AEDT?,,22,0,2356,47,290,2378,337
+What are the specific requirements that an employer or employment agency in the city must fulfill when using an automated employment decision tool to screen candidates or employees for employment decisions?,,32,0,2918,59,313,2950,372
+To which tribunals can a proceeding to recover a civil penalty be returned in the context of automated employment decision tools?,,24,0,2837,54,78,2861,132
+What does the term 'Bias Audit' refer to according to § 20-870 of the Code?,,21,0,2576,40,100,2597,140
+How is the AEDT used in the bias audit to assess the demographic composition of applicants?,,19,0,2400,54,205,2419,259
+What is the process for calculating the impact ratio in a bias audit of an AEDT?,,19,0,2437,68,186,2456,254
+"According to the provided context, how is an 'automated employment decision tool' defined in terms of its impact on employment decisions?",,26,0,2746,51,106,2772,157
+Under what circumstance can a category be excluded from the bias audit calculations?,,14,0,2339,47,79,2353,126
+"In the context of the provided example, what are the two possible meanings of 'Impact Ratio'?",,19,0,3049,77,55,3068,132
+"In the context of automated employment decision tools, how is 'employment decision' defined for the purpose of screening candidates or employees?",,25,0,2770,42,57,2795,99
+What criteria must be met in order to exclude a category from the required calculations for the impact ratio in a bias audit of an AEDT?,,29,0,2423,49,71,2452,120
+What are the specific requirements for conducting a bias audit of an AEDT using historical data?,,19,0,2228,51,260,2247,311
+What are the options for an employer or employment agency to provide notice to a candidate for employment before the use of an AEDT if they have used the AEDT in the past?,,38,0,2463,95,149,2501,244
+"According to § 20-870 of the Code, what does the term 'Bias Audit' mean?",,21,0,2314,41,50,2335,91
+What calculations are required for a bias audit of an AEDT according to the new rules?,,19,0,2418,48,189,2437,237
+Why is it important to conduct a bias audit for automated employment decision tools with regards to persons of any component 1 category required to be reported by employers?,,31,0,2845,65,155,2876,220
+What are the requirements for conducting a bias audit of an AEDT used to screen resumes and schedule interviews for a job posting?,,26,0,2649,54,363,2675,417
+How can an employer provide notice to candidates for employment about the use of an AEDT in compliance with the law?,,24,0,2431,72,166,2455,238
+What criteria must be met for an automated employment decision tool to require a bias audit?,,17,0,2937,35,127,2954,162
+What are the requirements for conducting a bias audit of an automated employment decision tool?,,16,0,2859,54,204,2875,258
+Why is a bias audit necessary for automated employment decision tools in the context of this subchapter?,,19,0,2842,56,143,2861,199
+What information should be included in the published results of the bias audit for the AEDT?,,19,0,2230,52,201,2249,253
+"When conducting a bias audit for an AEDT, is it necessary to calculate the impact ratio for each race/ethnicity and sex category separately?",,30,0,2628,59,111,2658,170
+To which tribunals can a proceeding to recover a civil penalty authorized by this subchapter be returnable?,,22,0,2560,54,64,2582,118
+What are some methods that an employer or employment agency can use to provide notice to candidates for employment at least 10 business days before use of an AEDT?,,33,0,2715,74,129,2748,203
+What calculations are required to be performed in a bias audit of an AEDT according to the new legislation?,,22,0,2185,47,156,2207,203
+Are there any specific requirements or criteria that an automated employment decision tool must meet according to the local law in New York City?,,25,0,2674,71,284,2699,355
+"I'm considering using an AEDT for the first time. Can I rely on a bias audit conducted using the historical data of other employers or employment agencies, or can I conduct a bias audit using test data? What is the definition of 'test data' in the context of a bias audit?",,60,0,2712,43,167,2772,210
+I have been using an AEDT for 3 years and will soon need an updated bias audit. Can you tell me what information is included in the bias audit summary?,,35,0,2371,30,210,2406,240
+Can you explain the definition of an Automated Employment Decision Tool (AEDT) according to Local Law 144 in New York City?,,27,0,3019,48,141,3046,189
+Can you explain the definition of an automated employment decision tool according to Local Law 144 in New York City?,,22,0,3080,59,138,3102,197
+Can you explain the meaning of test data in the context of a bias audit according to Local Law 144 and other policy documents?,,26,0,3068,26,184,3094,210
+"I am an employer using an AEDT to score applicants for 'culture fit' and want to ensure a bias audit was conducted before using the AEDT. What is the threshold for excluding a category, such as sex or race/ethnicity, from the required calculations for impact ratio?",,59,0,2828,73,123,2887,196
+"As a lawyer reviewing the requirements for bias audits in accordance with Local Law 144, can you explain what 'test data' means in the context of a bias audit?",,34,0,2712,26,141,2746,167
+What are the requirements for a bias audit of an AEDT according to Local Law 144 and other policy documents?,,24,0,2356,54,417,2380,471
+"As a legal consultant for Local Law 144 and other policy documents, I would like to know where a proceeding to recover a civil penalty authorized by this subchapter can be returned to.",,37,0,2555,68,74,2592,142
+"As a lawyer working on Local Law 144 and other policy documents, I need information on the race and ethnicity categories in the selection process. Can you explain the purpose of the AEDT in the bias audit?",,43,0,2831,64,142,2874,206
+"As a legal advisor for Local Law 144 and other policy documents, can you explain the definition of an automated employment decision tool?",,26,0,2951,35,126,2977,161
+"As a business owner interested in learning about Local Law 144 and other policy documents, I would like to know where a proceeding to recover a civil penalty can be returnable?",,35,0,2514,61,75,2549,136
+"As a student from Canada who will be studying in Europe, what can an independent auditor exclude from the required calculations for impact ratio?",,26,0,3036,40,111,3062,151
+I have been using an AEDT for 3 years and will soon need an updated bias audit. Can you tell me what information must be included in the summary of results of a bias audit?,,40,0,2759,35,151,2799,186
+What are the requirements for the published results of the bias audit for the AEDT?,,18,0,2529,44,212,2547,256
+"As a legal chatbot for Local Law 144 and other policy documents, can you tell me where a proceeding to recover a civil penalty can be returnable?",,32,0,2588,86,55,2620,141
+"As an employer who has been using an AEDT for 3 years and will soon need an updated bias audit, what are the requirements for conducting a bias audit?",,34,0,2644,38,310,2678,348
+I'm reviewing policy documents related to bias audits and I'm seeking clarification on the definition of 'Impact Ratio'. Can you explain what 'Impact Ratio' means?,,32,0,2423,56,248,2455,304
+Can you please explain the meaning of 'Bias Audit' as defined by § 20-870 of the Code?,,23,0,2177,40,208,2200,248
+Can you explain the definition of an Automated Employment Decision Tool (AEDT) according to Local Law 144 of 2021 in New York City? I'm trying to understand how it applies to the new rules our company is implementing.,,48,0,2814,44,311,2862,355
+What are the methods an employer or employment agency can use to provide notice to candidates for employment according to Local Law 144?,,25,0,2696,78,117,2721,195
+"In the context of a company in New York City using an automated employment decision tool to screen candidates and employees, what is the definition of an automated employment decision tool?",,33,0,2746,37,135,2779,172
+Can you please explain the meaning of 'Bias Audit' as defined by § 20-870 of the Code in the context of Local Law 144?,,31,0,2732,48,228,2763,276
+"As a legal chatbot for Local Law 144 and other policy documents, can you tell me where a proceeding to recover a civil penalty authorized by this subchapter can be returned to?",,37,0,2325,68,67,2362,135
+Can you please explain the purpose of the AEDT in the bias audit for Local Law 144 and other policy documents?,,25,0,2267,65,258,2292,323
+What is the definition of an automated employment decision tool and what penalties are imposed for violating its requirements?,,20,0,3080,26,171,3100,197
+What are the requirements for a bias audit of an AEDT and what changes were made in the second version of the proposed rules?,,27,0,2513,41,468,2540,509
+What is the definition of an automated employment decision tool and what is a bias audit?,,17,0,2695,24,187,2712,211
+Where is a proceeding to recover a civil penalty returnable and who has the authority to initiate an action or proceeding for correction of a violation?,,28,0,2373,46,114,2401,160
+"What are the requirements for an employer or employment agency to comply with § 20-871(b)(1) and (2) of the Code, and what information must they make publicly available before the use of an AEDT?",,47,0,2569,106,454,2616,560
+What are the requirements for a bias audit and what is test data in the context of a bias audit?,,21,0,2827,31,316,2848,347
+What is the definition of 'test data' and what are the requirements for a bias audit of an AEDT?,,24,0,3032,33,221,3056,254
+What is the definition of test data and when can an employer or employment agency rely on a bias audit that uses test data?,,25,0,2698,26,81,2723,107
+"What methods can an employer or employment agency use to provide notice to a candidate for employment, and what information must they make publicly available before the use of an AEDT?",,35,0,2421,36,242,2456,278
+What is the definition of test data and what are the requirements for a bias audit of an AEDT?,,22,0,3032,29,210,3054,239
+What is the purpose and when can an employer rely on a bias audit?,,15,0,2341,31,205,2356,236
+What is the definition of an automated employment decision tool and what are the penalties for violating the requirements?,,20,0,3080,31,160,3100,191
+What are the requirements for using an automated employment decision tool and what penalties are imposed for violating these requirements?,,21,0,3172,26,302,3193,328
+"What are the requirements for an employer or employment agency to comply with § 20-871(b)(1) and (2) of the Code, and what information must be made publicly available before the use of an AEDT?",,47,0,2459,106,342,2506,448
+"What is required for an employer or employment agency to use an automated employment decision tool, and what penalties can be imposed for violations of the subchapter regarding automated employment decision tools?",,35,0,2942,70,197,2977,267
+What is the definition of 'Automated Employment Decision Tool' and what is a 'Bias audit'?,,20,0,2722,33,189,2742,222
+What are the requirements for a bias audit and what is test data?,,14,0,3065,24,177,3079,201
+What must an employer or employment agency provide in a bias audit and what are the options for providing notice to a candidate for employment?,,26,0,2355,37,209,2381,246
+What are the requirements and purpose of conducting a bias audit?,,12,0,2651,38,317,2663,355
+What is the meaning of 'simplified output' and 'impact ratio'?,,15,0,2392,46,161,2407,207
+What is a bias audit and what information should be publicly available before using an AEDT?,,19,0,2247,27,241,2266,268
+What is the definition of 'employment decision' and what are the requirements for using an automated employment decision tool?,,22,0,3172,26,236,3194,262
+What are the requirements for a bias audit of an AEDT and what is test data?,,19,0,2671,29,207,2690,236
+What is the purpose of a bias audit and under what circumstances can an employer rely on it using historical data from other employers?,,25,0,2423,51,111,2448,162
+What is the definition of an automated employment decision tool and what are the requirements for using it?,,19,0,2875,29,231,2894,260
+"What is the definition of an automated employment decision tool, and what are the penalties for violating the requirements associated with it?",,24,0,3080,26,167,3104,193
+What is the relationship between the definition of 'test data' in a bias audit and the requirements for a bias audit of an AEDT?,,29,0,2635,32,170,2664,202
+What is the relationship between the effective date of this local law and the file number and version of the associated document?,,23,0,2588,60,30,2611,90
+What are the differences and similarities between the requirements for publicly available information on the employment section of a website before the use of an AEDT and the options for an employer or employment agency to provide notice to a candidate for employment regarding the use of an AEDT?,,54,0,2670,81,423,2724,504
+How does the data requirements for a bias audit relate to the process of assessing the impact of an AEDT on different categories?,,26,0,2720,51,154,2746,205
+"Where can a proceeding to recover a civil penalty be returnable, and who has the authority to initiate an action or proceeding for correction of any violation?",,30,0,2325,65,97,2355,162
+What is the relationship between the definition of an automated employment decision tool and the requirements for using such a tool?,,22,0,3035,30,189,3057,219
+"What is the relationship between test data and the requirements for a bias audit, and how do they differ?",,21,0,3032,24,180,3053,204
+"What are the differences and similarities between 'selection rate' and 'scoring rate', and how do they relate to each other?",,26,0,2322,57,296,2348,353
+What calculations are required in the bias audit and when can an independent auditor exclude a category from these calculations?,,21,0,2628,35,164,2649,199
+What is the relationship between the definition of test data and when an employer or employment agency can rely on a bias audit that uses test data?,,28,0,2987,26,105,3015,131
+"What is the relationship between the calculations in a bias audit of an AEDT and the requirements for the published results, and how do they differ?",,30,0,2410,73,277,2440,350
+What is the relationship between the calculations required for the bias audit and the exclusion of categories from the impact ratio?,,22,0,2423,51,100,2445,151
+What are the requirements and penalties associated with using an automated employment decision tool?,,15,0,3166,26,397,3181,423
+"What is the relationship between an automated employment decision tool and the requirements for using it, and how do they impact employment decisions?",,25,0,2875,46,372,2900,418
+"What are the requirements for an employer or employment agency to comply with § 20-871(b)(1) and (2) of the Code, and how do they compare to the information that must be made publicly available before the use of an AEDT?",,53,0,2554,106,372,2607,478
+"What are the differences and similarities between the definitions of 'Scoring Rate' and 'Screen', and how do they relate to each other?",,28,0,2322,40,208,2350,248
+What is the relationship between the definition of 'Automated Employment Decision Tool' and the requirement for using such a tool in the city?,,27,0,2875,44,177,2902,221
+What is the relationship between the definition of 'employment decision' and the requirements for using an automated employment decision tool?,,23,0,3035,33,213,3058,246
+What is the relationship between the requirements for a bias audit and the concept of test data?,,18,0,2641,19,110,2659,129
+What is the relationship between the purpose of a bias audit and when an employer can rely on a bias audit that uses test data?,,26,0,2423,41,129,2449,170
+"What are the definitions of 'Automated Employment Decision Tool' and 'Bias Audit', and how are they related according to § 20-870 of the Code?",,33,0,2760,39,286,2793,325
+What are the requirements and penalties associated with the use of automated employment decision tools?,,16,0,3172,29,320,3188,349
+"What are the requirements for an employer or employment agency to provide information about the use of an AEDT on their website, and how can they notify candidates about it?",,34,0,2233,76,226,2267,302
+"What are the requirements for an employer to provide information on their website regarding their AEDT, and how does it compare to the notice requirements for candidates for employment?",,33,0,2431,67,381,2464,448
+An employer in the city of New York wants to use an automated employment decision tool to screen candidates for a job position. What requirements must be met in order for the employer to use the tool?,,39,0,3172,61,311,3211,372
+An employer has been using an AEDT for 3 years and will soon need an updated bias audit. Can the employer rely on a bias audit conducted using test data?,,35,0,2365,44,104,2400,148
+"If an employer in New York City uses an automated employment decision tool to screen candidates for a promotion within the city, what information must be disclosed to the candidates?",,32,0,3035,82,259,3067,341
+"If an employer or employment agency violates the requirements for using an automated employment decision tool, what penalties may they face?",,23,0,3172,54,172,3195,226
+An employer wants to conduct a bias audit to assess the impact of their hiring process on different race/ethnicity categories. Can they rely on a bias audit that uses test data instead of historical data?,,40,0,2789,42,110,2829,152
+Does this local law limit the authority of the commission on human rights to enforce the provisions of title 8?,,22,0,2550,61,152,2572,213
+An employer in the city wants to use an AEDT for employment decisions. How should the employer provide notice to candidates for employment who reside in the city?,,32,0,2546,64,196,2578,260
+"If an employer or employment agency uses an automated employment decision tool to screen a candidate or employee for an employment decision in New York City, what notices are they required to provide?",,35,0,2746,74,255,2781,329
+An employer uses an AEDT to score applicants for 'culture fit.' The AEDT conducted a bias audit that excluded a category representing less than 2% of the data used. Is this exclusion allowed under the law?,,46,0,2529,60,116,2575,176
+"If an employer in the city of New York uses an automated employment decision tool to screen a candidate for an employment decision, what are the requirements under the law?",,32,0,3035,85,349,3067,434
+"An employer is using an AEDT to screen candidates for a job position. The AEDT assesses candidates based on 'culture fit.' According to the provided context, what are the requirements for conducting a bias audit of the AEDT?",,50,0,2373,58,268,2423,326
+Suppose an employer in New York City uses an automated employment decision tool to screen candidates for employment. What are the requirements for the use of such a tool according to the local law?,,37,0,2875,67,315,2912,382
+"An employer in the city of New York wants to use an automated employment decision tool to screen candidates for a job opening. According to the provided context, what requirements must the employer fulfill before using the tool?",,41,0,3172,56,236,3213,292
+An employer has been using an AEDT for 3 years and will soon need an updated bias audit. Can the employer rely on a bias audit conducted using historical data from its own use of the AEDT?,,44,0,2827,52,92,2871,144
+An employer in New York City wants to use an automated employment decision tool to screen candidates for a job opening. What requirements must the employer meet in order to use the tool?,,35,0,3088,57,299,3123,356
+"If a person wants to initiate a proceeding to recover a civil penalty authorized by this subchapter, where can the proceeding be returnable?",,27,0,2325,60,60,2352,120
+"If a person wants to recover a civil penalty authorized by this subchapter, where can they bring a proceeding?",,22,0,2358,56,60,2380,116
+"An employer in the city uses an automated employment decision tool to screen candidates for a job position. According to the provided context, what requirements must be met for the use of such tool to be lawful?",,40,0,2883,63,314,2923,377
+"An employer uses an AEDT to score applicants for 'culture fit.' According to the provided context, what must the employer ensure in order to use the AEDT?",,35,0,2238,70,65,2273,135
+An employer wants to use an AEDT to screen resumes and schedule interviews for a job posting. What are the requirements for a bias audit of the AEDT?,,34,0,2313,27,339,2347,366
+"Suppose an employer in New York City uses an automated employment decision tool to make hiring decisions. According to the rules mentioned in the context, what are the requirements for the use of such a tool under Local Law 144 of 2021?",,49,0,2719,106,251,2768,357
+An employer wants to use an AEDT to screen resumes and schedule interviews for a job posting. Does the employer need to conduct a bias audit of the AEDT?,,35,0,2583,49,88,2618,137
+"If an employer in New York City uses an automated employment decision tool to screen candidates or employees for an employment decision, what requirements must be met?",,29,0,3088,80,354,3117,434
+An employer in the city of New York wants to use an automated employment decision tool to screen candidates for a job opening. What requirements must the employer meet in order to use the tool?,,37,0,3172,57,308,3209,365
+What is the purpose?,,5,0,2239,36,95,2244,131
+What calculations are required?,,5,0,2691,56,393,2696,449
+What should be in the summary?,,7,0,2880,31,181,2887,212
+What is the role of the AEDT?,,10,0,2024,34,74,2034,108
+What is the purpose of a bias audit?,,9,0,2644,36,103,2653,139
+What are the requirements?,,5,0,2575,48,563,2580,611
+What is an automated employment decision tool?,,8,0,2746,30,134,2754,164
+What does 'Bias Audit' mean?,,8,0,2174,18,96,2182,114
+What are the criteria for a bias audit?,,9,0,2347,14,246,2356,260
+What does an automated employment decision tool mean?,,9,0,2746,30,138,2755,168
+What are the criteria for an AEDT bias audit?,,12,0,2290,31,264,2302,295
+Where can the proceeding be brought?,,7,0,2368,46,60,2375,106
+What is the meaning of 'selection rate'?,,9,0,2695,28,72,2704,100
+Where can it be returned to?,,7,0,2368,34,61,2375,95
+What does 'Impact Ratio' mean?,,8,0,2753,33,76,2761,109
+What is the meaning of 'Bias Audit'?,,9,0,2341,31,167,2350,198
+What are the conditions?,,5,0,2014,40,43,2019,83
+What needs to be publicly available?,,7,0,2964,37,212,2971,249
+What are the notification options?,,6,0,2688,34,206,2694,240
+Where is the proceeding returnable?,,7,0,2368,44,60,2375,104
+What does 'Historical data' mean?,,9,0,2648,18,64,2657,82
+What are the required calculations?,,6,0,2638,46,207,2644,253
+What are the requirements for the results?,,8,0,2642,48,130,2650,178
+What's included in the summary?,,7,0,2755,19,104,2762,123
+What is the role of a bias audit in relation to automated employment decision tools?,,16,0,2845,47,178,2861,225
+What is the legislation that would come 5 years after this one?,,14,0,2385,46,22,2399,68
+Which specifc people (give names) have developed the AEDT software?,,17,0,2246,41,21,2263,62
+What additional specific data would need to be provided if we conduct a Bias Audit in Australia?,,18,0,2246,42,58,2264,100
+What was the specific words said by the stakeholders when they reviewed the proposed rules?,,16,0,3080,23,70,3096,93
+How long does the data retention policy under GDPR require the employer or employment agency to retain the information?,,20,0,2845,46,81,2865,127
+Has there been a rule passed in New Zealand like this that was passed unanimously?,,16,0,2779,28,59,2795,87
+"What is the required email address for sending the notice to a candidate for employment, if I choose to do it by email?",,25,0,2696,46,78,2721,124
+What specific companies are responsible for conducting the bias audit of an automated employment decision tool?,,17,0,2937,49,68,2954,117
+In which specific courts in New York City can the corporation counsel initiate actions or proceedings?,,17,0,2550,69,50,2567,119
+How long are employers required to retain the data collected by the automated employment decision tool?,,17,0,2784,63,80,2801,143
+What specific comments did the Department receive from the public regarding the proposed rule?,,15,0,2837,27,44,2852,71
+What is the name of the person responsible for conducting the bias audit of the AEDT?,,19,0,2232,44,23,2251,67
+Did John develop the AEDT?,,8,0,2023,22,21,2031,43
+What was the specific sentiment of the comments received about the proposed rule?,,14,0,2524,31,20,2538,51
+What is the average age of the male applicants in the White category?,,14,0,2844,34,20,2858,54
+Within how many days will the requested information be provided to a candidate or employee?,,16,0,2739,58,58,2755,116
+What are the factors that determine the simplified output if we were to use a tool to decide which companies to sign deals with?,,25,0,2879,66,68,2904,134
+What is the impact ratio for non-binary applicants?,,10,0,2815,55,50,2825,105
+"According to the policy document, what is the definition of 'Candidate for Promotion'?",,16,0,2324,34,14,2340,48
+Who is the best person to go to if I need them to conduct a bias audit?,,18,0,2644,33,28,2662,61
+What type of data does the vendor provide regarding applicant selection in Venezuela?,,14,0,2825,61,61,2839,122
