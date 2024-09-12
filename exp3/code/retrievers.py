@@ -1,4 +1,4 @@
-from code.prompts import get_classification_prompt, get_query_generation_prompt
+from prompts import get_classification_prompt, get_query_generation_prompt
 from utils_code import initialize_openai_creds, create_llm
 from llama_index.core.schema import QueryBundle, NodeWithScore
 from llama_index.core.retrievers import BaseRetriever, VectorIndexRetriever
@@ -10,6 +10,119 @@ from llama_index.core.indices.property_graph import LLMSynonymRetriever
 from llama_index.core.indices.property_graph import VectorContextRetriever, PGRetriever
 from llama_index.core.retrievers import BaseRetriever, VectorIndexRetriever, KGTableRetriever
 import os
+
+class FixedParamRetriever(BaseRetriever):
+    """Custom retriever that performs query rewriting and Vector/BM25 search with fixed parameters."""
+
+    def __init__(
+        self,
+        llm,  # LLM for query generation
+        vector_retriever: Optional[VectorIndexRetriever] = None,
+        bm25_retriever: Optional[BaseRetriever] = None,
+        top_k: int = 5,  # Fixed top-k
+        num_query_rewrites: int = 3,  # Fixed number of query rewrites
+        rewriter: bool = True,
+        device: str = 'mps',  # Set to 'mps' as the default device
+        reranker_model_name: Optional[str] = None,  # Model name for SentenceTransformerRerank
+        verbose: bool = False  # Verbose flag
+    ) -> None:
+        """Initialize FixedParamRetriever parameters."""
+        self._vector_retriever = vector_retriever
+        self._bm25_retriever = bm25_retriever
+        self._llm = llm
+        self._rewriter = rewriter
+        self._top_k = top_k
+        self._num_query_rewrites = num_query_rewrites
+        self._reranker_model_name = reranker_model_name
+        self._reranker = None  # Initialize reranker as None
+        self.verbose = verbose
+
+        if self._reranker_model_name:
+            self._reranker = SentenceTransformerRerank(model=self._reranker_model_name, top_n=self._top_k)
+            if self.verbose:
+                print(f"Initialized reranker with top_n: {self._top_k}")
+
+    def generate_queries(self, query_str: str, num_queries: int) -> List[str]:
+        """Generate query variations using the LLM."""
+        query_gen_prompt = get_query_generation_prompt(query_str, num_queries)
+        response = self._llm.complete(query_gen_prompt)
+        queries = response.text.split("\n")
+        return [query.strip() for query in queries if query.strip()]
+
+    async def run_queries(self, queries: List[str], retrievers: List[BaseRetriever]) -> dict:
+        """Run queries against retrievers."""
+        tasks = []
+        for query in queries:
+            for retriever in retrievers:
+                tasks.append(retriever.aretrieve(query))
+
+        task_results = await asyncio.gather(*tasks)
+
+        results_dict = {}
+        for i, (query, query_result) in enumerate(zip(queries, task_results)):
+            results_dict[(query, i)] = query_result
+        return results_dict
+
+    def fuse_vector_and_bm25_results(self, results_dict, similarity_top_k: int) -> List[NodeWithScore]:
+        """Fuse results from Vector and BM25 retrievers."""
+        k = 60.0  # `k` is a parameter used to control the impact of outlier rankings.
+        fused_scores = {}
+        text_to_node = {}
+
+        for nodes_with_scores in results_dict.values():
+            for rank, node_with_score in enumerate(
+                sorted(nodes_with_scores, key=lambda x: x.score or 0.0, reverse=True)
+            ):
+                text = node_with_score.node.get_content()
+                text_to_node[text] = node_with_score
+                if text not in fused_scores:
+                    fused_scores[text] = 0.0
+                fused_scores[text] += 1.0 / (rank + k)
+
+        reranked_results = dict(sorted(fused_scores.items(), key=lambda x: x[1], reverse=True))
+
+        reranked_nodes: List[NodeWithScore] = []
+        for text, score in reranked_results.items():
+            if text in text_to_node:
+                node = text_to_node[text]
+                node.score = score
+                reranked_nodes.append(node)
+            else:
+                if self.verbose:
+                    print(f"Warning: Text not found in `text_to_node`: {text}")
+
+        return reranked_nodes[:similarity_top_k]
+
+    def _retrieve(self, query_bundle: QueryBundle) -> List[NodeWithScore]:
+        """Retrieve nodes given query."""
+        if self._rewriter:
+            queries = self.generate_queries(query_bundle.query_str, num_queries=self._num_query_rewrites)
+            if self.verbose:
+                print(f"Generated Queries: {queries}")
+        else:
+            queries = [query_bundle.query_str]
+
+        active_retrievers = []
+        if self._vector_retriever:
+            active_retrievers.append(self._vector_retriever)
+        if self._bm25_retriever:
+            active_retrievers.append(self._bm25_retriever)
+
+        if not active_retrievers:
+            raise ValueError("No active retriever provided!")
+
+        results = asyncio.run(self.run_queries(queries, active_retrievers))
+        final_results = self.fuse_vector_and_bm25_results(results, similarity_top_k=self._top_k)
+
+        if self._reranker:
+            final_results = self._reranker.postprocess_nodes(final_results, query_bundle)
+            if self.verbose:
+                print(f"Reranked Results: {final_results}")
+        else:
+            final_results = final_results[:self._top_k]
+
+        return final_results
+
 
 
 class PARetriever(BaseRetriever):
@@ -343,7 +456,6 @@ from llama_index.readers.file import PyMuPDFReader
 from llama_index.core.chat_engine import ContextChatEngine
 from llama_index.core.memory.chat_memory_buffer import ChatMemoryBuffer
 from llama_index.core import KnowledgeGraphIndex
-from code.experiment_notebooks.exp3.code.retrievers import PARetriever, HyPARetriever
 
 
 def load_documents():
