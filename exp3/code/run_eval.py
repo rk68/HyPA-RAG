@@ -13,7 +13,7 @@ from llama_index.core.base.llms.types import ChatMessage, MessageRole
 from giskard.rag import KnowledgeBase, QATestset, AgentAnswer, evaluate
 from giskard.rag.metrics.ragas_metrics import ragas_faithfulness, ragas_answer_relevancy
 from utils_code import create_kg_index, create_pg_index, load_documents, create_chat_engine
-from retrievers import HyPARetriever, PARetriever
+from retrievers import HyPARetriever, PARetriever, FixedParamRetriever
 from correctness_eval import process_correctness_scores
 from metrics import compute_metrics
 import pandas as pd
@@ -112,7 +112,17 @@ def initialize_indices(documents, kg_index=False, property_index=False):
 # Function to initialize retrievers
 def initialize_retriever(retriever_type, llm, vector_retriever, bm25_retriever, kg_index=None, property_index=False,
                          mode="OR", rewriter=True, classifier_model=None, device='mps', reranker_model_name=None, 
-                         verbose=False, fixed_params=None, categories_list=None, param_mappings=None):
+                         verbose=False, fixed_params=None, categories_list=None, param_mappings=None, top_k=3, num_query_rewrites=3):
+
+    # @TODO: Complete this for the fixed parameter retriever
+    if retriever_type == "Fixed":
+        return FixedParamRetriever(
+            # Add all parameters here
+            llm=llm, vector_retriever=vector_retriever, bm25_retriever=bm25_retriever,
+            rewriter=rewriter, device=device, reranker_model_name=reranker_model_name,
+            top_k=top_k, num_query_rewrites=num_query_rewrites
+        )
+
     if retriever_type == "HyPA":
         return HyPARetriever(
             llm=llm, vector_retriever=vector_retriever, bm25_retriever=bm25_retriever,
@@ -134,7 +144,8 @@ def initialize_retriever(retriever_type, llm, vector_retriever, bm25_retriever, 
 # Function to run the evaluation with different retriever configurations
 def run_evaluation(results_base_path: str, vector_index, graph_index, retriever_type: str = "HyPA", test_set_path: str = "../giskard_test_sets/LL144_275_New.jsonl", 
                    rewriter: bool = False, classifier_model: str = "rk68/distilbert-q-classifier-3", verbose: bool = False, property_index: bool = False, 
-                   mode: str = "OR", device: str = 'mps', fixed_params: dict = None, categories_list: list = None, param_mappings: dict = None):
+                   mode: str = "OR", device: str = 'mps', fixed_params: dict = None, categories_list: list = None, param_mappings: dict = None, top_k: int=5, num_query_rewrites: int=3,
+                   reranker_model_name=None):
     
     # Initialize LLM and retrievers
     vector_retriever = VectorIndexRetriever(index=vector_index, similarity_top_k=10)
@@ -143,7 +154,8 @@ def run_evaluation(results_base_path: str, vector_index, graph_index, retriever_
     retriever = initialize_retriever(retriever_type=retriever_type, llm=llm_gpt35, vector_retriever=vector_retriever, 
                                      bm25_retriever=bm25_retriever, kg_index=graph_index, property_index=property_index, 
                                      mode=mode, rewriter=rewriter, classifier_model=classifier_model, 
-                                     device=device, fixed_params=fixed_params, categories_list=categories_list, param_mappings=param_mappings)
+                                     device=device, fixed_params=fixed_params, categories_list=categories_list, param_mappings=param_mappings,
+                                     top_k=top_k, num_query_rewrites=num_query_rewrites, reranker_model_name=reranker_model_name)
 
     # Initialize Chat Engine
     memory = ChatMemoryBuffer.from_defaults(token_limit=8192)
@@ -208,13 +220,31 @@ if __name__ == "__main__":
     parser.add_argument("--param_mappings", type=dict, default=None, help="Custom parameter mappings based on classifier labels.")
 
     args = parser.parse_args()
-    ll144_paths = ["../../eval_and_data/legal_data/LL144/LL144.pdf", "../../eval_and_data/legal_data/LL144/LL144_Definitions.pdf"]
-    test_path_ex = "../../eval_and_data/giskard_test_sets/LL144/LL144_Sample.jsonl"
-    # Load documents and initialize indices
-    documents = load_documents(ll144_paths)#(args.corpus_paths)
-    vector_index, graph_index = initialize_indices(documents, kg_index=args.kg_index, property_index=args.property_index)
+    #ll144_paths = ["../../eval_and_data/legal_data/LL144/LL144.pdf", "../../eval_and_data/legal_data/LL144/LL144_Definitions.pdf"]
+    eu_data_path = ["../../eval_and_data/legal_data/EU_AI_ACT/EUAIACT.pdf"]
+    test_path = "../../eval_and_data/giskard_test_sets/EUAIACT/eu_ai_act_test_300_new.jsonl"
+    #test_path_ex = "../../eval_and_data/giskard_test_sets/LL144/LL144_Sample.jsonl"
 
-    # Run evaluations with different retriever configurations
-    run_evaluation(results_base_path="ex_test1", vector_index=vector_index, graph_index=graph_index, retriever_type="HyPA", test_set_path=test_path_ex)
-    run_evaluation(results_base_path="ex_test2", vector_index=vector_index, graph_index=graph_index, retriever_type="HyPA", test_set_path=test_path_ex)
+
+    # Load documents and initialize indices
+    documents = load_documents(eu_data_path)#(args.corpus_paths)
+    vector_index, graph_index = initialize_indices(documents, kg_index=True, property_index=False)
+
+    # @TODO: Edit to run evals for PA + HyPA + Fixed Param Configs for EU Act
+
+    # Eval Config: Fixed Top-K
+    #run_evaluation(results_base_path="eu_fixed_k3", vector_index=vector_index, graph_index=None, retriever_type="Fixed", test_set_path=test_path, top_k=3, rewriter=False)
+    #run_evaluation(results_base_path="eu_fixed_k5", vector_index=vector_index, graph_index=None, retriever_type="Fixed", test_set_path=test_path, top_k=5, rewriter=False)
+    #run_evaluation(results_base_path="eu_fixed_k7", vector_index=vector_index, graph_index=None, retriever_type="Fixed", test_set_path=test_path, top_k=7, rewriter=False)
+    #run_evaluation(results_base_path="eu_fixed_k10", vector_index=vector_index, graph_index=None, retriever_type="Fixed", test_set_path=test_path, top_k=10, rewriter=False)
+
+    #run_evaluation(results_base_path="eu_PA_no_rewriter", vector_index=vector_index, graph_index=None, retriever_type="PA", rewriter=False, test_set_path=test_path)
+    #run_evaluation(results_base_path="eu_HyPA_no_rewriter", vector_index=vector_index, graph_index=graph_index, retriever_type="HyPA", rewriter=False, test_set_path=test_path)
     #run_evaluation(results_base_path=args.results_base_path, vector_index=vector_index, graph_index=graph_index, retriever_type="PA", test_set_path=args.test_set_path)
+
+    run_evaluation(results_base_path="eu_PA_reranker_no_rewriter", vector_index=vector_index, graph_index=None, retriever_type="PA", rewriter=False, test_set_path=test_path, reranker_model_name="BAAI/bge-reranker-large")
+    run_evaluation(results_base_path="eu_HyPA_reranker_no_rewriter", vector_index=vector_index, graph_index=graph_index, retriever_type="HyPA", rewriter=False, test_set_path=test_path, reranker_model_name="BAAI/bge-reranker-large")
+
+    run_evaluation(results_base_path="eu_PA_reranker", vector_index=vector_index, graph_index=None, retriever_type="PA", rewriter=True, test_set_path=test_path, reranker_model_name="BAAI/bge-reranker-large")
+    run_evaluation(results_base_path="eu_HyPA_reranker", vector_index=vector_index, graph_index=graph_index, retriever_type="HyPA", rewriter=True, test_set_path=test_path, reranker_model_name="BAAI/bge-reranker-large")
+
